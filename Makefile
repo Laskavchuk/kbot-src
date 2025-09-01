@@ -3,7 +3,7 @@
 all:  image push
 
 APP=$(shell basename $(shell git remote get-url origin))
-REGESTRY=denvasyliev
+REGESTRY=laskavchuk
 CURRENTARCH=$(shell dpkg --print-architecture)
 VERSION=$(shell git describe --tags --abbrev=0)-$(shell git rev-parse HEAD|cut -c1-7)
 HELM_VERSION=$(shell git describe --tags --abbrev=0)
